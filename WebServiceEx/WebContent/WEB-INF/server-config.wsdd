@@ -1,0 +1,109 @@
+<ns1:deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java" xmlns:ns1="http://xml.apache.org/axis/wsdd/">
+ <ns1:globalConfiguration>
+  <ns1:parameter name="sendMultiRefs" value="true"/>
+  <ns1:parameter name="disablePrettyXML" value="true"/>
+  <ns1:parameter name="adminPassword" value="admin"/>
+  <ns1:parameter name="attachments.Directory" value="F:\JAVA_EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WebServiceEx\WEB-INF\attachments"/>
+  <ns1:parameter name="dotNetSoapEncFix" value="true"/>
+  <ns1:parameter name="enableNamespacePrefixOptimization" value="false"/>
+  <ns1:parameter name="sendXMLDeclaration" value="true"/>
+  <ns1:parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <ns1:parameter name="sendXsiTypes" value="true"/>
+  <ns1:requestFlow>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="session"/>
+   </ns1:handler>
+   <ns1:handler type="java:org.apache.axis.handlers.JWSHandler">
+    <ns1:parameter name="scope" value="request"/>
+    <ns1:parameter name="extension" value=".jwr"/>
+   </ns1:handler>
+  </ns1:requestFlow>
+ </ns1:globalConfiguration>
+ <ns1:handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <ns1:handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <ns1:handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <ns1:service name="AdminService" provider="java:MSG">
+  <ns1:parameter name="allowedMethods" value="AdminService"/>
+  <ns1:parameter name="enableRemoteAdmin" value="false"/>
+  <ns1:parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <ns1:namespace>http://xml.apache.org/axis/wsdd/</ns1:namespace>
+ </ns1:service>
+ <ns1:service name="Version" provider="java:RPC">
+  <ns1:parameter name="allowedMethods" value="getVersion"/>
+  <ns1:parameter name="className" value="org.apache.axis.Version"/>
+ </ns1:service>
+ <ns1:service name="Car" provider="java:RPC" style="wrapped" use="literal">
+  <ns2:operation name="getTitleById" qname="ns1:getTitleById" returnQName="ns1:getTitleByIdReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://ws.im.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+   <ns2:parameter qname="ns1:id" type="xsd:int"/>
+  </ns2:operation>
+  <ns1:parameter name="allowedMethods" value="getTitleById"/>
+  <ns1:parameter name="wsdlPortType" value="Car"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="schemaQualified" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlServicePort" value="Car"/>
+  <ns1:parameter name="className" value="com.im.ws.Car"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="CarService"/>
+ </ns1:service>
+ <ns1:service name="Calculator" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="add" qname="ns2:add" returnQName="ns2:addReturn" returnType="xsd:double" soapAction="" xmlns:ns2="http://ws.im.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns2:a" type="xsd:double"/>
+   <ns1:parameter qname="ns2:b" type="xsd:double"/>
+  </ns1:operation>
+  <ns1:operation name="substrsct" qname="ns3:substrsct" returnQName="ns3:substrsctReturn" returnType="xsd:double" soapAction="" xmlns:ns3="http://ws.im.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns3:a" type="xsd:double"/>
+   <ns1:parameter qname="ns3:b" type="xsd:double"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="add substrsct"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="Calculator"/>
+  <ns1:parameter name="className" value="com.im.ws.Calculator"/>
+  <ns1:parameter name="wsdlServicePort" value="Calculator"/>
+  <ns1:parameter name="schemaQualified" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="CalculatorService"/>
+ </ns1:service>
+ <ns1:service name="Converter" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="convert" qname="ns4:convert" returnQName="ns4:convertReturn" returnType="xsd:double" soapAction="" xmlns:ns4="http://ws.im.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns4:a" type="xsd:double"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="convert"/>
+  <ns1:parameter name="wsdlPortType" value="Converter"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="schemaQualified" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlServicePort" value="Converter"/>
+  <ns1:parameter name="className" value="com.im.ws.Converter"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="ConverterService"/>
+ </ns1:service>
+ <ns1:service name="MToFConverter" provider="java:RPC" style="wrapped" use="literal">
+  <ns1:operation name="convert" qname="ns5:convert" returnQName="ns5:convertReturn" returnType="xsd:double" soapAction="" xmlns:ns5="http://ws.im.com" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <ns1:parameter qname="ns5:m" type="xsd:double"/>
+  </ns1:operation>
+  <ns1:parameter name="allowedMethods" value="convert"/>
+  <ns1:parameter name="typeMappingVersion" value="1.2"/>
+  <ns1:parameter name="wsdlPortType" value="MToFConverter"/>
+  <ns1:parameter name="className" value="com.im.ws.MToFConverter"/>
+  <ns1:parameter name="wsdlServicePort" value="MToFConverter"/>
+  <ns1:parameter name="schemaQualified" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlTargetNamespace" value="http://ws.im.com"/>
+  <ns1:parameter name="wsdlServiceElement" value="MToFConverterService"/>
+ </ns1:service>
+ <ns1:transport name="http">
+  <ns1:requestFlow>
+   <ns1:handler type="URLMapper"/>
+   <ns1:handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </ns1:requestFlow>
+  <ns1:parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <ns1:parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <ns1:parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <ns1:parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </ns1:transport>
+ <ns1:transport name="local">
+  <ns1:responseFlow>
+   <ns1:handler type="LocalResponder"/>
+  </ns1:responseFlow>
+ </ns1:transport>
+</ns1:deployment>

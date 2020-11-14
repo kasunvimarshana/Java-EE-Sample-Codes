@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/KASUN/eclipse/jee-neon/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Java/jdk1.8.0_92/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Java/jdk1.8.0_92/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/KASUN/.p2/pool/plugins/org.junit_4.12.0.v201504281640
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/KASUN/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+org.eclipse.jdt.core.compiler.compliance=1.8
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.source=1.8
+org.eclipse.jdt.core.userLibrary.hibernate=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/antlr-2.7.7.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/dom4j-1.6.1.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/hibernate-commons-annotations-4.0.1.Final.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/hibernate-core-4.1.9.Final.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/javassist-3.17.1-GA.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/jboss-logging-3.1.0.GA.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/hibernate/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>\r\n</userlibrary>\r\n
+org.eclipse.jdt.core.userLibrary.mysql_connector=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/mysql_connector/mysql-connector-java-5.0.8-bin.jar"/>\r\n</userlibrary>\r\n
+org.eclipse.jdt.core.userLibrary.struts2=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/commons-fileupload-1.3.1.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/commons-io-2.2.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/commons-lang3-3.1.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/commons-logging-1.1.3.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/commons-logging-api-1.1.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/freemarker-2.3.19.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/javassist-3.11.0.GA.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/ognl-3.0.6.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/struts2-core-2.3.16.1.jar"/>\r\n\t<archive path\="C\:/Users/KASUN/eclipse/jee-neon/eclipse/UserLibs/struts2/xwork-core-2.3.16.1.jar"/>\r\n</userlibrary>\r\n

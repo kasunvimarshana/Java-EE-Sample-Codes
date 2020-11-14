@@ -1,0 +1,14 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class TestN {
+  @Test
+  public void f() {
+	  System.out.println("test");
+	  System.setProperty("webdriver.gecko.driver", "");
+	  WebDriver driver = new FirefoxDriver();
+	  driver.get("https://www.seleniumhq.org/download/");
+	  
+  }
+}

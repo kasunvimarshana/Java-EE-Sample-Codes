@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+<constant name="struts.devMode" value="true"/>
+<package name="default" extends="struts-default">
+
+<action name="item" class="com.im.myebay.action.ItemAction">
+	<result name="success">/item.jsp</result>
+	<result name="input">/item.jsp</result>
+</action>
+
+<action name="add" class="com.im.myebay.action.ItemAction" method="add">
+	<interceptor-ref name="fileUpload">
+		<param name="allowedTypes">image/png,image/gif,image/jpeg,image/pjapg</param>
+		<param name="maximumSize">200204</param>
+	</interceptor-ref>
+	<interceptor-ref name="params">
+        <param name="excludeParams">dojo\..*,^struts\..*</param>
+    </interceptor-ref>
+	
+	<result name="success" type="chain">item</result>
+	<result name="input" type="chain">item</result>
+</action>
+
+</package>
+
+</struts>

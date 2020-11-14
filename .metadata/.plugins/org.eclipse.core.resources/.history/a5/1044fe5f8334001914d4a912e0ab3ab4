@@ -1,0 +1,13 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class TestN {
+  @Test
+  public void f() {
+	  System.out.println("test");
+	  WebDriver driver = new ChromeDriver();
+	  driver.get("https://www.seleniumhq.org/download/");
+	  
+  }
+}

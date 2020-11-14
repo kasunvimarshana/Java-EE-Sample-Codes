@@ -1,0 +1,12 @@
+spring standards
+================
+folder structure
+	+src\main\java
+	+src\main\resources
+	+src\main\webapp
+	+src\main\test
+
+set content directory -> src\main\webapp
+
+//convert project as a maven project
+right click on the project -> configure -> convert to maven project

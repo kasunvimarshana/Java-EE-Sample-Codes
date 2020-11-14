@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;ReflectionAPI/src/com.im.reflect&apos;&#x0D;&#x0A;- Original project: &apos;ReflectionAPI&apos;&#x0D;&#x0A;- Destination element: &apos;ReflectionAPI/src/com.im.reflect&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Girl.java&#x0D;&#x0A;     Boy.java&#x0D;&#x0A;     Person.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;com.im.reflect" element1="/src&lt;{Girl.java" element2="/src&lt;{Boy.java" element3="/src&lt;{Person.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1492918988286" units="3" version="1.0"/>
+</session>
